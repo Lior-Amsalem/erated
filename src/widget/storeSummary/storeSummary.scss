@@ -1,0 +1,104 @@
+$grey: #7C7C7C;
+$grey_text: #777777;
+$bar_orange: #F5AF02;
+$bar_grey: #DFDFDF;
+$white: #fff;
+
+.store-summary {
+	/**
+	 * rating section
+	 */
+	.rating {
+		.num {
+			font-size: 54px;
+			font-weight: 700;
+			color: $grey;
+			padding: 10px;
+			display: inline-block;
+		}
+
+		.stars-wrapper {
+			display: inline-block;
+			margin-top: 2px;
+			height: 44px;
+			position: relative;
+
+			.star {
+				width: 44px;
+				position: relative;
+			}
+
+			.stars-fill {
+				background: $bar_orange;
+				height: 44px;
+				position: absolute;
+				display: inline-block;
+			}
+		}
+	}
+
+	.transcations {
+		font-size: 14px;
+		padding: 0 0 5px 10px;
+	}
+
+	/**
+	 * Bars section
+	 */
+	.bars {
+		padding: 0 0 10px 10px;
+
+		.row {
+			.bar,
+			.label {
+				display: inline-block;
+				width: 50%;
+			}
+
+			.label {
+				font-size: 14px;
+				color: $grey_text;
+				padding: 5px 0;
+			}
+
+			.bar {
+				background-color: $bar_grey;
+				border-radius: 3px;
+				color: $white;
+				font-size: 12px;
+				width: 144px;
+
+				.fill-1,
+				.fill-2,
+				.fill-3,
+				.fill-4,
+				.fill-5{
+					background-color: $bar_orange;
+					display: inline-block;
+					text-align: right;
+					padding-right: 5%;
+					border-radius: 3px;
+				}
+				
+				/**
+				 * Fill the grey bar - the missing 5% is the padding from the right for the text
+				 */
+				.fill-1 {
+					width: 15%;
+				}
+				.fill-2 {
+					width: 35%;
+				}
+				.fill-3 {
+					width: 55%;
+				}
+				.fill-4 {
+					width: 85%;
+				}
+				.fill-5 {
+					width: 95%;
+				}
+			}
+		}
+	}
+}

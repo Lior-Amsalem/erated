@@ -1,0 +1,133 @@
+$orange: #F5AF02;
+$grey: #B3B3B3;
+$grey_dark: #777777;
+$white: #fff;
+
+/**
+ * User profile section / wrapper
+ */
+.user-profile {
+	padding-top: 5px;
+
+	/**
+	 * Seller photo and rating circle
+	 */
+	.seller-photo {
+		border-radius: 50%; /* Ful circle */
+		border: 3px solid #fff;
+		height: 74px;
+		width: 74px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.rating {
+		display: inline-block;
+		vertical-align: top;
+		width: 74px;
+		height: 74px;
+		border-radius: 50%; /* Ful circle */
+		border: 2px solid $orange;
+		text-align: center;
+		margin-left: -10px;
+
+		.number {
+			color: $orange;
+			font-size: 18px;
+			padding-top: 15px;
+			display: inline-block;
+		}
+
+		p {
+			margin: 0;
+			color: $grey;
+			font-size: 18px;
+		}
+	}
+
+	/**
+	 * User level
+	 */
+	.user-level {
+		display: inline-block;
+		float: right;
+		margin-right: 20px;
+
+		img {
+			height: 50px;
+			width: 50px;
+		}
+	}
+
+	/**
+	 * Username && feedback titles
+	 */
+	hgroup {
+		padding-left: 20px;
+
+		h3,
+		h2 {
+			color: $grey_dark;
+			margin: 5px 0;
+		}
+
+		h3 {
+			font-size: 14px;
+			font-weight: 400;
+		}
+	}
+
+	/**
+	 * Social account list - facebook, linkedin, twitter
+	 */
+	ul {
+		padding: 10px;
+		margin: 10px 0 0 0;
+    	background-color: $white;
+
+		li {
+			display: inline-block;
+			width: 33%;
+			min-width: 50px;
+			text-align: center;
+			position: relative;
+
+			/**
+			 * Add separator for the social items
+			 */
+			&:after {
+				content: "";
+				border-right: 1px solid $grey;
+				position: absolute;
+				height: 38px;
+				top: 29px;
+				right: 0;
+			}
+
+			/**
+			 * hide the last separator in the social section
+			 */
+			&:last-child {
+				&:after {
+					border: 0;
+				}
+			}
+
+			.title {
+				color: $grey;
+				font-size: 14px;
+			}
+
+			.counter {
+				padding: 5px 0;
+			}
+
+			.icon {
+				svg {
+					height: 20px;
+					width: 20px;
+				}
+			}
+		}
+	}
+}

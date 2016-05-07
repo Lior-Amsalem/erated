@@ -1,0 +1,43 @@
+$silver: #EFEFEF;
+$bg_white: #fff;
+$bg_orange: #F5AF02;
+
+body {
+	background-color: lightgray;
+	font-family: 'Helvetica Neue', 'arial';
+}
+
+/**
+ * global style for our widget
+ */
+.widget-wrapper {
+	width: 969px;
+	background-color: $bg_white;
+
+	.strip {
+		background-color: $bg_orange;
+		height: 30px;
+	}
+
+	.reviews,
+	.menu-rating-wrapper,
+	.user-profile {
+		width: 33%;
+		display: inline-block;
+		vertical-align: top;
+		height: 240px;
+		border-left: 1px solid $silver;
+	}
+
+	.loading {
+		padding: 20px;
+		
+		.animation {
+		    margin-right: 10px;
+		}
+	}
+
+	.no-data {
+		padding: 20px;
+	}
+}

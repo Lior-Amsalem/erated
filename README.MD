@@ -6,7 +6,7 @@
 2. Than "npm run start"
 3. Go to: http://localhost:3333/
 
-### general
+### General
 1. This implementation contain only dev ENV, I haven't build webpack configuration for production.
 
 ### Technologies - why?
@@ -23,10 +23,22 @@
 1. Small components - Thanks to webpack 'import' and react components and redux scalability it's easy to manage and maintain the code in small portion (from media, to html and even css).
 2. Folder by feature - provides high scalability and allows us to extend the product as much as we need.
 3. Separation of concerns:
-⋅⋅ 1. Logic - managed inside reducers.
-⋅⋅ 2. Data - injected into store/state thanks to Redux.
-⋅⋅ 3. HTML - lives within render function inside React component.
-⋅⋅ 4. Style - written inside the component specific folder or globally and import when we need it.
-⋅⋅ 5. Dump/Smart components - dump components aren't aware of redux and they just get data from "props" which allows for easy reusability of code that isn't coupled with redux.
+  1. Logic - managed inside reducers.
+  2. Data - injected into store/state thanks to Redux.
+  3. HTML - lives within render function inside React component.
+  4. Style - written inside the component specific folder or globally and import when we need it.
+  5. Dump/Smart components - dump components aren't aware of redux and they just get data from "props" which allows for easy reusability of code that isn't coupled with redux.
 4. CommonJS - work with "export" to expose logic/components/data and more.
 	
+### Tested
+1. ubuntu
+  1. chrome
+  2. firefox
+2. mac OS
+  1. chrome
+  2. safari
+  3. firefox
+
+### Screenshot
+
+![alt tag](screenshot.png)

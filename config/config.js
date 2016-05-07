@@ -3,8 +3,9 @@ const storeThunk = Redux.compose(
 )(Redux.createStore);
 
 const configureStore = function configureStore(rootReducer, initialState) {
-	const store = storeThunk(rootReducer, initialState,
-					typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f);
+	const store = storeThunk(rootReducer, initialState
+						//,typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f
+					);
 
 	return store;
 }

@@ -57,8 +57,8 @@ class StoreSummary extends React.Component {
 					</span>
 				</div>
 
-				<div className="transcations">
-					Number of transcations made: 3421
+				<div className="transactions">
+					Number of transactions made: 3421
 				</div>
 
 				<div className="bars">
